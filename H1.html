@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crosetarie</title>
+    <style>
+*{
+    margin: 0px;
+}
+
+.parent-div1{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+#child-div1{
+    background-color:darkblue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-grow: 1;
+    z-index: 0;
+    
+    
+}
+
+#child-div2{
+    background-color: darkred;
+    margin-bottom:5%;
+    flex-grow: 1;
+    z-index: 2;
+       
+}
+
+#child-div3{
+    background-color:darkgreen;
+    flex-grow: 1;
+    margin-bottom: 5%;
+    z-index: 0;
+    
+}
+
+
+
+.parent-div2{
+    display: flex;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#child1-div2{
+    background-color: lightgreen;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-grow: 1;
+    z-index: 1;
+    
+}
+
+#child2-div2{
+    background-color: lightpink;
+    margin-right: 10%;
+    flex-grow: 1;
+    z-index: 1;
+    
+}
+
+#child3-div2{
+    background-color: lightblue;
+    margin-right: 10%;
+    flex-grow: 1;
+    z-index: 1;
+    
+}
+
+
+    </style>
+</head>
+<body>
+  <div class="parent-div1">
+      <div id="child-div1"></div>
+      <div id="child-div2"></div>
+      <div id="child-div3"></div>
+  </div>  
+  <div class="parent-div2">
+  <div id="child1-div2"></div>
+  <div id="child2-div2"></div>
+  <div id="child3-div2"></div>
+</div>   
+    
+</body>
+</html>
